@@ -18,9 +18,16 @@ $(function(){
     
   }
 
-  $('.toappend').on(click,'.fa-trash-alt', function(){
-    console.log('lol');
+  $('.toappend').on("click",'.fa-trash-alt', function(){
+    $(this).parent().remove();
 
-  })
-
+  });
+  
+  $('.toappend').keyup(function(event){
+    if(event.which === 13);
+    
+  });
+    
+  
+  
 })
