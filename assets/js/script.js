@@ -23,8 +23,12 @@ $(function(){
 
   });
   
-  $('.toappend').keyup(function(event){
-    if(event.which === 13);
+  $('input').keyup(function(event){
+    if(event.which === 13){
+      var inputText = $(this).val()
+      $('.toappend').append('<li><p>' + inputText  + '<i class="fas fa-trash-alt"></i></p></li>');
+    }
+
     
   });
     
